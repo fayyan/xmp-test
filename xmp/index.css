@@ -367,16 +367,16 @@ body {
     position: relative;
 }
 
+.kr .section1 {
+    padding: 25rem 0 7rem;
+}
+
 .section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10rem 0 7rem;
-}
-
-.kr .section1 {
-    padding: 25rem 0 7rem;
 }
 
 .section1-img {
@@ -527,7 +527,7 @@ body {
 .foot-item {
     margin-left: 1.25rem;
     font-size: 1.625rem;
-    flex: 1;
+    /* flex: 1; */
 }
 
 dl {
@@ -536,7 +536,6 @@ dl {
 
 dt {
     margin: 0 0 5px;
-
 }
 
 dd {
