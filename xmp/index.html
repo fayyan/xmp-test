@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <title>xmp</title>
+</head>
+<script type='text/javascript'>
+    !function (e, t, n, g, i) { e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag) }(window, document, "script", "assets.giocdn.com/2.1/gio.js", "gio");
+    gio('init', 'bd2e71bc78f55fc1', {
+        imp: false, // 禁用元素浏览量采集
+        hashtag: true // 启用 hashtag 作为标识页面的一部分
+    });
+    gio('send');
+</script>
+<script>
+    function setUrl() {
+        var lang = navigator.language || navigator.userLanguage;//常规浏览器语言和IE浏览器
+        lang = lang.substr(0, 2).toLowerCase();//截取lang前2位字符
+        if (lang == 'zh') {
+            window.location.replace('./cn.html');
+        } else {
+            window.location.replace('./en.html')
+        }
+    }
+
+    setUrl();
+</script>
+
+<body></body>
+
+</html>

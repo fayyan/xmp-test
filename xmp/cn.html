@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta name="viewport" id="vp">
+  <link rel="icon" href="./favicon.ico">
+  <title>xmp</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+
+<body class="zh-cn">
+  <div class="h-menu bg-black">
+    <div class="h-menucont font-bold">
+      <img src="images/logoColor.png" class="h-logo" />
+      <div class="nav">
+        <a href="https://xmp.nativex.com/login?lang=cn&type=1" target="_blank" class="hover-blue">
+          登 录
+        </a>
+        <a href="https://xmp.nativex.com/login?lang=cn&type=2" class="get-start-btn" target="_blank">
+          免费试用
+        </a>
+        <div class="x-lang" id="Lang">
+          <div class="xmp-dropdown" id="langDropdown">
+            <div class="xmp-dropdown-rel" onclick="toggleLang()">
+              <a href="javascript:void(0)" class="hover-blue">CN<i class="arrow-down"></i></a>
+            </div>
+            <div class="xmp-select-dropdown" style="display: none;" id="selectDropdown">
+              <ul class="xmp-dropdown-menu">
+                <li class="xmp-dropdown-item sel-item hover-blue" onclick="changeLang('cn')">CN</li>
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('en')">
+                  EN
+                </li>
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('jp')">
+                  JP
+                </li>
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('kr')">
+                  KR
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- banner -->
+    <div class="bg-black">
+      <div class="x-wrap banner-img">
+        <img src="./images/banner.png" class="drift-animation" />
+        <div class="banner-content">
+          <img src="images/line1.png" style="width: 28.5rem;" />
+          <div class="slogan-title font-bold">
+            XMP广告投放平台
+          </div>
+          <div class="slogan-desc banner-desc font-regular">
+            XMP 聚合东西方各大媒体渠道，集成第三方归因平台，提供高效、智能、安全、一站式的跨渠道广告投放和效果评估服务
+          </div>
+          <div class="flex-center">
+            <a class="big-start-btn" href="https://xmp.nativex.com/login?lang=cn&type=2" target="_blank">
+              <span class="start-block bg-blue"></span>
+              <span class="txt">
+                免费试用
+                <img src="images/arrow.png" class="arrow-right" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section1 -->
+    <div class="bg-black">
+      <div class="x-wrap section1 font-bold">
+        <div class="section1-img">
+          <span class="section1-msg drift-animation">
+            XMP--全方位赋能您的广告投放活动
+          </span>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon1.png" />
+          <div>一站式投放</div>
+        </div>
+        <div class="section1-img bg-yellow">
+          <img src="./images/icon2.png" />
+          <div>批量创建管理</div>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon3.png" />
+          <div>智能云端素材</div>
+        </div>
+        <div class="section1-img bg-yellow">
+          <img src="./images/icon4.png" />
+          <div>自动监测跟踪</div>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon5.png" />
+          <div>AI 巡检</div>
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <div class="flex-between section2 m-sec x-wrap">
+      <div class="img-item">
+        <img src="./images/1.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          一站式大媒体投放
+        </div>
+        <div class="slogan-desc font-regular">
+          一站触达广点通、巨量引擎、TikTok、Facebook、Google、Snapchat、Vungle、Unity、快手等十几个广告平台进行广告投放，
+          触达数十亿用户，并能够跨渠道跨账号分析数据表现
+        </div>
+      </div>
+    </div>
+    <!-- section3 -->
+    <div class="flex-between section3 m-sec x-wrap">
+      <div class="cont3">
+        <div class="slogan-title2 font-bold">
+          批量操作<br />
+          提高广告管理效率
+        </div>
+        <div class="slogan-desc font-regular" style="width: 57%">
+          批量创建广告计划，快速进行 A/B 测试，根据广告效果智能调优，批量操作，广告投放效率提升200%
+        </div>
+        <img src="images/line2.png" class="cont3-bg-img" />
+      </div>
+      <div class="img-item cont3-img">
+        <img src="./images/2.png" width="100%" class="drift-animation" />
+      </div>
+    </div>
+    <!-- section4 -->
+    <div class="flex-between section4 m-sec x-wrap">
+      <div class="img-item">
+        <img src="./images/3.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          数据洞察<br />
+          查看素材表现
+        </div>
+        <div class="slogan-desc font-regular">
+          云端统一管理素材，创建广告时无需重复上传，可跨渠道、跨账号选用。汇总分析素材表现，快速定位优秀素材
+        </div>
+      </div>
+    </div>
+    <!-- section5 -->
+    <div class="section5 m-sec bg-blue">
+      <div class="slogan-title2 font-bold">
+        数据闭环<br />
+        优化广告表现
+      </div>
+      <div class="slogan-desc font-regular" style="width: 36%">
+        集成 Tenjin 服务，自动生成监测链接，批量管理转化跟踪，并根据 LTV、ROAS 等归因数据智能创建和调整广告，降低成本，提升广告效果
+      </div>
+      <div class="cont5-block bg-yellow"></div>
+      <div class="img-item cont5-img" style="width: 45%">
+        <img src="./images/4.png" width="100%" class="drift-animation" />
+      </div>
+    </div>
+    <!-- section6 -->
+    <div class="flex-between section6 m-sec x-wrap">
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          AI巡检<br />
+          解放更多人力
+        </div>
+        <div class="slogan-desc font-regular">
+          跨渠道管理 Campaign，查看数据表现，7*24小时全天候预警，自动调整广告，实现对广告的智能化控制
+        </div>
+      </div>
+      <div class="section6-img">
+        <img src="./images/5.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="section6-bg-block"></div>
+    </div>
+    <!--  section7 -->
+    <div class="section7 x-wrap bg-blue">
+      <div class="cont7">
+        <div class="slogan-title2 font-bold" style="width: 45%">
+          我们提供专业全面的服务
+        </div>
+        <div class="flex-center" style="position: relative">
+          <a class="big-start-btn" href="https://xmp.nativex.com/login?lang=cn&type=2" target="_blank">
+            <span class="start-block bg-yellow"></span>
+            <div class="txt">
+              免费试用
+              <img src="images/arrow.png" class="arrow-right" />
+            </div>
+          </a>
+        </div>
+        <div class="slogan-desc font-regular cont7-desc drift-animation">
+          Nativex 是全球各大媒体的深度合作伙伴和顶级代理，具备广告账户开通和充值资质，我们将协助您解决出海入海的一切问题
+        </div>
+      </div>
+      <div class="bg-yellow sec7-block-yellow"></div>
+      <div class="bg-blue sec7-block-blue"></div>
+    </div>
+    <!-- footer -->
+    <div class="bg-black">
+      <img src="images/line3.png" style="width: 100%" />
+      <div class="x-wrap x-footer">
+        <img src="./images/logoWhite.png" class="footer-logo" />
+        <div class="x-msg font-regular">
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/cn/who-we-are/" target="_blank">关于我们</a>
+              </dt>
+              <dd>
+                <a href="https://www.nativex.com/cn/who-we-are/" target="_blank">关于 Nativex</a><br />
+                <a href="https://www.nativex.com/cn/news-room/" target="_blank">新闻</a><br />
+                <a href="https://www.nativex.com/cn/brand-assets/" target="_blank">品牌资产</a><br />
+                <a href="https://www.nativex.com/cn/career/" target="_blank">招贤纳士</a><br />
+              </dd>
+            </dl>
+          </div>
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/cn/blog/" target="_blank">我们的思考</a>
+              </dt>
+              <dd>
+                <a href="https://www.nativex.com/cn/blog/" target="_blank">博客文章及洞察</a><br />
+                <a href="https://www.nativex.com/cn/ebook/" target="_blank">电子书</a><br />
+              </dd>
+            </dl>
+          </div>
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/cn/get-in-touch/" target="_blank">联系我们</a>
+              </dt>
+              <dd>
+                <a href="mailto:xmp-support@nativex.com">xmp-support@nativex.com</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="x-wrap footer-privacy">
+        Copyright © 2020 Nativex All Rights Reserved
+        <a href="https://www.nativex.com/cn/privacy/" target="_blank" style="padding: 0 30px;">隐私政策</a>
+        <a href="https://www.nativex.com/nativex-program-terms-and-conditions" target="_blank">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>
+  !function (e, t, n, g, i) { e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag) }(window, document, "script", "assets.giocdn.com/2.1/gio.js", "gio");
+  gio('init', 'bd2e71bc78f55fc1', {
+    imp: false, // 禁用元素浏览量采集
+    hashtag: true // 启用 hashtag 作为标识页面的一部分
+  });
+  gio('send');
+</script>
+<script src="./common.js"></script>
+<script>
+  const basicScreen = 1366;
+  const hideHeight = 300;
+  let lastHeight = 0;
+  if (window.screen.width < basicScreen) {
+    const r = window.screen.width / basicScreen;
+    document.head.getElementsByTagName('meta').vp.content = `width=device-width,initial-scale=${r}`;
+  } else {
+    const r = window.screen.width / basicScreen;
+    document.head.getElementsByTagName('meta').vp.content = 'width=device-width,initial-scale=1.0';
+  }
+  function changeLang(e) {
+    if (e === 'cn') {
+      document.getElementById('selectDropdown').style.display = 'none';
+    } else if (e === 'en') {
+      window.location.href = './en.html';
+    } else if (e === 'jp') {
+      window.location.href = './jp.html';
+    } else {
+      window.location.href = './kr.html';
+    }
+  }
+
+  function toggleLang() {
+    if (document.getElementById('selectDropdown').style.display === 'none') {
+      document.getElementById('selectDropdown').style.display = 'block';
+    }
+  }
+
+  window.addEventListener('click', (e) => {
+    const closestElement = e.target.closest('#langDropdown');
+    console.log(closestElement)
+    if (closestElement) {
+      return;
+    } else {
+      document.getElementById('selectDropdown').style.display = 'none';
+    }
+  })
+
+  window.addEventListener('scroll', e => {
+    const isDown = getScrollDirection();
+    handleHeader(isDown);
+    imgAnimation();
+  })
+</script>
+
+</html>

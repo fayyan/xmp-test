@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta name="viewport" id="vp">
+  <link rel="icon" href="./favicon.ico">
+  <title>xmp</title>
+</head>
+<link rel="stylesheet" href="./index.css">
+
+<body class="jp">
+  <div class="h-menu bg-black">
+    <div class="h-menucont font-bold">
+      <img src="images/logoColor.png" class="h-logo" />
+      <div class="nav">
+        <a href="https://xmp.nativex.com/login?lang=en&type=1" target="_blank" class="hover-blue">ログイン</a>
+        <a href="https://xmp.nativex.com/login?lang=en&type=2" class="get-start-btn" target="_blank">
+          始める
+        </a>
+        <div class="x-lang" id="Lang">
+          <div class="xmp-dropdown" id="langDropdown">
+            <div class="xmp-dropdown-rel" onclick="toggleLang()">
+              <a href="javascript:void(0)" class="hover-blue">JP<i class="arrow-down"></i></a>
+            </div>
+            <div class="xmp-select-dropdown" style="display: none;" id="selectDropdown">
+              <ul class="xmp-dropdown-menu">
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('cn')">CN</li>
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('en')">
+                  EN
+                </li>
+                <li class="xmp-dropdown-item sel-item hover-blue" onclick="changeLang('jp')">
+                  JP
+                </li>
+                <li class="xmp-dropdown-item hover-blue" onclick="changeLang('kr')">
+                  KR
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- banner -->
+    <div class="bg-black">
+      <div class="x-wrap banner-img">
+        <img src="./images/banner.png" class="drift-animation" />
+        <div class="banner-content">
+          <img src="images/line1.png" style="width: 28.5rem;" />
+          <div class="slogan-title font-bold">
+            <!-- INCREASE YOUR<br />
+            GLOBAL REACH -->
+            世界中へ配信
+          </div>
+          <div class="slogan-desc font-regular banner-desc">
+            <!-- XMP automates creative and campaign management
+            across the top East & West advertising platforms -->
+            東西の広告プラットフォームのキャンペーン管理を自動化します
+          </div>
+          <div class="flex-center">
+            <a class="big-start-btn" href="https://xmp.nativex.com/login?lang=en&type=2" target="_blank">
+              <span class="start-block bg-blue"></span>
+              <span class="txt font-bold-base">
+                始める
+                <img src="images/arrow.png" class="arrow-right" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section1 -->
+    <div class="bg-black">
+      <div class="x-wrap section1 font-bold-base">
+        <div class="section1-img">
+          <span class="section1-msg drift-animation font-bold">
+            業務時間を<br />
+            短縮して<br />
+            広告効果を<br>
+            最大化
+          </span>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon1.png" />
+          <div>マルチチャネル</div>
+        </div>
+        <div class="section1-img bg-yellow">
+          <img src="./images/icon2.png" />
+          <div>効率を向上</div>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon3.png" />
+          <div>広告を最適化</div>
+        </div>
+        <div class="section1-img bg-yellow">
+          <img src="./images/icon4.png" />
+          <div>ワークフローを自動化</div>
+        </div>
+        <div class="section1-img bg-blue">
+          <img src="./images/icon5.png" />
+          <div>AIアシスタント</div>
+        </div>
+      </div>
+    </div>
+    <!-- section2 -->
+    <div class="flex-between section2 m-sec x-wrap">
+      <div class="img-item">
+        <img src="./images/1.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          配信管理
+        </div>
+        <div class="slogan-desc font-regular">
+          クリック1つで複数のキャンペーンを管理し、東西の広告プラットフォームから世界中のユーザーに配信できます。接続プラットフォームは、Facebook、Google、TikTok、Snapchat、Bytedance（Toutiao）、Tencent（Wechat）、Vungle、Unity、Applovin、Mintegral、ironSource、Kwaiなどです。
+        </div>
+      </div>
+    </div>
+    <!-- section3 -->
+    <div class="flex-between section3 m-sec x-wrap">
+      <div class="cont3">
+        <div class="slogan-title2 font-bold">
+          ワークフロー効率の向上
+        </div>
+        <div class="slogan-desc font-regular" style="width: 55%">
+          バッチ機能により広告を一括して作成・管理することができ、ワークフローの効率性を向上させます。
+        </div>
+        <img src="images/line2.png" class="cont3-bg-img" />
+      </div>
+      <div class="img-item cont3-img">
+        <img src="./images/2.png" width="100%" class="drift-animation" />
+      </div>
+    </div>
+    <!-- section4 -->
+    <div class="flex-between section4 m-sec x-wrap">
+      <div class="img-item">
+        <img src="./images/3.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          データに<br />
+          基づく決定
+        </div>
+        <div class="slogan-desc font-regular">
+          各チャネルの傾向やパフォーマンスの良いクリエイティブをダッシュボード上で迅速に識別できます。
+        </div>
+      </div>
+    </div>
+    <!-- section5 -->
+    <div class="section5 m-sec bg-blue">
+      <div class="slogan-title2 font-bold">
+        ワークフロ<br>
+        ーを自動化
+      </div>
+      <div class="slogan-desc font-regular" style="width: 36%">
+        計測SDKと連携しており、トラッキングリンクの生成・設定を自動化します。
+      </div>
+      <div class="cont5-block bg-yellow"></div>
+      <div class="img-item cont5-img" style="width: 45%">
+        <img src="./images/4.png" width="100%" class="drift-animation" />
+      </div>
+    </div>
+    <!-- section6 -->
+    <div class="flex-between section6 m-sec x-wrap">
+      <div class="cont-item">
+        <div class="slogan-title2 font-bold">
+          AIアシスタント
+        </div>
+        <div class="slogan-desc font-regular">
+          AIアシスタントがリアルタイムでキャンペーンを自動的に監視・調整します。
+        </div>
+      </div>
+      <div class="section6-img">
+        <img src="./images/5.png" width="100%" class="drift-animation" />
+      </div>
+      <div class="section6-bg-block"></div>
+    </div>
+    <!--  section7 -->
+    <div class="section7 x-wrap bg-blue">
+      <div class="cont7">
+        <div class="slogan-title2 font-bold" style="width: 45%">
+          プロフェッショナルサービス
+        </div>
+        <a class="big-start-btn" href="https://xmp.nativex.com/login?lang=en&type=2" target="_blank">
+          <span class="start-block bg-yellow"></span>
+          <span class="txt font-bold-base">
+            始める
+            <img src="images/arrow.png" class="arrow-right" />
+          </span>
+        </a>
+        <div class="slogan-desc font-regular cont7-desc drift-animation">
+          Nativexは豊富な経験をもち、東西のアプリ開発者が世界中で成功するための繋ぎ役(Bridege)になります。
+        </div>
+      </div>
+      <div class="bg-yellow sec7-block-yellow"></div>
+      <div class="bg-blue sec7-block-blue"></div>
+    </div>
+    <!-- footer -->
+    <div class="bg-black">
+      <img src="images/line3.png" style="width: 100%" />
+      <div class="x-wrap x-footer">
+        <img src="./images/logoWhite.png" class="footer-logo" />
+        <div class="x-msg font-regular">
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/en/who-we-are/" target="_blank">会社情報</a>
+              </dt>
+              <dd>
+                <a href="https://www.nativex.com/en/who-we-are/" target="_blank">Nativexについて</a><br />
+                <a href="https://www.nativex.com/en/news-room/" target="_blank">ニュースルーム</a><br />
+                <a href="https://www.nativex.com/en/brand-assets/" target="_blank">ブランドアセット</a><br />
+                <a href="https://www.nativex.com/en/career/" target="_blank">採用情報</a><br />
+              </dd>
+            </dl>
+          </div>
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/en/blog/" target="_blank">リソース</a>
+              </dt>
+              <dd>
+                <a href="https://www.nativex.com/en/blog/" target="_blank">ブログ</a><br />
+                <a href="https://www.nativex.com/en/ebook/" target="_blank">eBooks</a><br />
+                <a href="https://www.nativex.com/en/insights/" target="_blank">インサイト</a>
+              </dd>
+            </dl>
+          </div>
+          <div class="foot-item">
+            <dl>
+              <dt class="font-bold">
+                <a href="https://www.nativex.com/en/get-in-touch/" target="_blank">お問い合わせ</a>
+              </dt>
+              <dd>
+                <a href="mailto:xmp-support@nativex.com">xmp-support@nativex.com</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="x-wrap footer-privacy">
+        Copyright © 2020 Nativex All Rights Reserved
+        <a href="https://www.nativex.com/en/privacy/" target="_blank" style="padding: 0 30px;">Privacy Policy</a>
+        <a href="https://www.nativex.com/nativex-program-terms-and-conditions" target="_blank">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>
+  !function (e, t, n, g, i) { e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag) }(window, document, "script", "assets.giocdn.com/2.1/gio.js", "gio");
+  gio('init', 'bd2e71bc78f55fc1', {
+    imp: false, // 禁用元素浏览量采集
+    hashtag: true // 启用 hashtag 作为标识页面的一部分
+  });
+  gio('send');
+</script>
+<script src="./common.js"></script>
+<script>
+  const basicScreen = 1366;
+  const hideHeight = 300;
+  let lastHeight = 0;
+  if (window.screen.width < basicScreen) {
+    const r = window.screen.width / basicScreen;
+    document.head.getElementsByTagName('meta').vp.content = `width=device-width,initial-scale=${r}`;
+  } else {
+    const r = window.screen.width / basicScreen;
+    document.head.getElementsByTagName('meta').vp.content = 'width=device-width,initial-scale=1.0';
+  }
+  function changeLang(e) {
+    if (e === 'jp') {
+      document.getElementById('selectDropdown').style.display = 'none';
+    } else if (e === 'cn') {
+      window.location.href = './cn.html';
+    } else if (e === 'en') {
+      window.location.href = './en.html';
+    } else {
+      window.location.href = './kr.html';
+    }
+  }
+
+  function toggleLang() {
+    if (document.getElementById('selectDropdown').style.display === 'none') {
+      document.getElementById('selectDropdown').style.display = 'block';
+    }
+  }
+
+  window.addEventListener('click', (e) => {
+    const closestElement = e.target.closest('#langDropdown');
+    console.log(closestElement)
+    if (closestElement) {
+      return;
+    } else {
+      document.getElementById('selectDropdown').style.display = 'none';
+    }
+  })
+
+  window.addEventListener('scroll', e => {
+    const isDown = getScrollDirection();
+    handleHeader(isDown);
+    imgAnimation();
+  })
+</script>
+
+</html>

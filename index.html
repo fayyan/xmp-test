@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" id="vp">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>xmp</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      min-height: 100%;
+      margin: 0
+    }
+
+    #xmp__skeleton {
+      height: calc(100% - 40px);
+      padding: 16px
+    }
+
+    #app {
+      display: none
+    }
+
+    .xmp__skeleton {
+      height: 16px;
+      background: -webkit-gradient(linear, left top, right top, color-stop(25%, #f2f2f2), color-stop(37%, #e6e6e6), color-stop(63%, #f2f2f2));
+      background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+      background-size: 400% 100%;
+      -webkit-animation: skeleton-loading 1.4s ease infinite;
+      animation: skeleton-loading 1.4s ease infinite;
+      transform: translate3d(0, 0, 0)
+    }
+
+    .xmp__skeleton_header {
+      height: 40px
+    }
+
+    .xmp__skeleton_sider {
+      height: calc(100% - 70px);
+      width: 200px;
+      float: left;
+      margin-top: 32px
+    }
+
+    .xmp__skeleton_content {
+      margin-left: 240px;
+      height: calc(100% - 70px);
+      margin-top: 32px
+    }
+
+    @-webkit-keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0 50%
+      }
+    }
+
+    @keyframes skeleton-loading {
+      0% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0 50%
+      }
+    }
+
+    #noBrowser {
+      width: 500px;
+      margin: 0 auto;
+      padding: 50px 0 0 0;
+      text-align: center;
+    }
+
+    #browserTip1 {
+      font-size: 28px;
+      color: #0875FF;
+      margin-bottom: 10px;
+    }
+
+    #browserTip2 {
+      color: #868686;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .browser-list {
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      margin: 0 auto;
+    }
+  </style>
+  <% if(process.env.VUE_APP_ENV === 'production'){%>
+  <script type='text/javascript'>
+    !function (e, t, n, g, i) { e[i] = e[i] || function () { (e[i].q = e[i].q || []).push(arguments) }, n = t.createElement("script"), tag = t.getElementsByTagName("script")[0], n.async = 1, n.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + g, tag.parentNode.insertBefore(n, tag) }(window, document, "script", "assets.giocdn.com/2.1/gio.js", "gio");
+    gio('init', 'bd2e71bc78f55fc1', {
+      imp: false, // 禁用元素浏览量采集
+      hashtag: true // 启用 hashtag 作为标识页面的一部分
+    });
+    gio('send');
+  </script>
+  <% }%>
+  <% if(process.env.NODE_ENV === 'production'){%>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74634898-3"></script>
+  <script type='text/javascript'>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-74634898-3');
+
+    if (window.PerformanceObserver && window.PerformancePaintTiming) {
+      const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          // `name` will be either 'first-paint' or 'first-contentful-paint'.
+          const metricName = entry.name.replace(/-/g, '');
+          const time = Math.round(entry.startTime + entry.duration);
+          gtag('event', 'timing_complete', {
+            event_category: 'Performance Metrics',
+            event_label: metricName,
+            name: metricName,
+            value: time / 1000,
+          });
+        }
+      });
+      observer.observe({ entryTypes: ['paint'] });
+    }
+    if (performance) {
+      performance.mark('first-meaningful-content-start');
+    }
+  </script>
+  <% }%>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but xmp doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <div id="xmp__skeleton">
+    <div class="xmp__skeleton xmp__skeleton_header"></div>
+    <div class="xmp__skeleton xmp__skeleton_sider"></div>
+    <div class="xmp__skeleton xmp__skeleton_content"></div>
+  </div>
+  <div id="noBrowser" style="display: none;">
+    <div>
+      <img src="/img/browser.png" width="400">
+    </div>
+    <div id="browserTip1">Browser not supported</div>
+    <div id="browserTip2">You're using a web browser we don't support. Try one of these options to have a better
+      experience on XMP.</div>
+    <div class="browser-list">
+      <a href="https://www.google.com/chrome" target="_blank">
+        <img src="/img/icons/chrome-logo.svg" width="60" height="60" />
+      </a>
+      <a href="https://www.mozilla.org/firefox/browsers/" target="_blank">
+        <img src="/img/icons/firefox.png" width="60" height="60" />
+      </a>
+      <a href="https://support.apple.com/downloads/safari" target="_blank">
+        <img src="/img/icons/safari-120.png" width="60" height="60" />
+      </a>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+<script type='text/javascript'>
+  /** 使用特征检测浏览器类型 */
+  const isFirefox = typeof InstallTrigger !== 'undefined';
+  const isChrome = !!window.chrome && navigator.userAgent.indexOf('Chrome') > -1
+  let chromeVersion = 0;
+  const isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === '[object SafariRemoteNotification]'; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))
+  const isAndroid = navigator.userAgent.indexOf('Android') > -1 || navigator.userAgent.indexOf('Adr') > -1; //android终端
+  const isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+  if (isChrome) {
+    chromeVersion = parseInt(navigator.userAgent.split('Chrome/')[1]);
+  }
+  if (!((isChrome && chromeVersion > 70) || isFirefox || isSafari) && !isAndroid && !isiOS) {
+    const lang = navigator.language.indexOf('zh') === 0 ? 'zh-CN' : 'en-US';
+    if (lang === 'zh-CN') {
+      document.getElementById('browserTip1').innerText = '浏览器版本不兼容';
+      document.getElementById('browserTip2').innerText = '浏览器版本过低，为避免可能存在的安全隐患，推荐使用以下浏览器。';
+    }
+    document.body.removeChild(  document.getElementById('app'))
+    document.body.removeChild(  document.getElementById('xmp__skeleton'))
+    document.getElementById('noBrowser').style.display = 'block';
+  }
+
+</script>
+
+</html>
