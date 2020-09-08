@@ -86,22 +86,6 @@ a {
 }
 
 .jp {
-    font-family: Nanum;
-}
-
-.jp .font-bold {
-    font-family: NanumBold;
-}
-
-.jp .font-regular {
-    font-family: Nanum;
-}
-
-.jp .font-bold-base {
-    font-family: Nanum;
-}
-
-.jp {
     font-family: NotoRegular;
 }
 
@@ -115,6 +99,22 @@ a {
 
 .jp .font-bold-base {
     font-family: NotoRegular;
+}
+
+.kr {
+    font-family: Nanum;
+}
+
+.kr .font-bold {
+    font-family: NanumBold;
+}
+
+.kr .font-regular {
+    font-family: Nanum;
+}
+
+.kr .font-bold-base {
+    font-family: Nanum;
 }
 
 body {
