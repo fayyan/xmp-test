@@ -396,7 +396,7 @@ body {
 }
 
 .jp .section1-img {
-    width: 32%;
+    width: 31%;
 }
 
 .section1-img >img {
@@ -410,6 +410,10 @@ body {
 
 .kr .section1-img >div {
     font-size: 1.65rem;
+}
+
+.jp .section1-img >div {
+    font-size: 2rem;
 }
 
 .section1-msg {
